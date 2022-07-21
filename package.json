@@ -1,12 +1,23 @@
 {
-  "name": "myWebServer",
   "version": "1.0.0",
+  "author": "@nan",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:server": "pnpm --filter @nan/node-server dev && echo 0",
+    "dev:webApp": "pnpm --filter @nan/web-app dev && echo 0",
+    "build:webApp": "pnpm --filter @nan/web-app build && echo 0",
+    "start:server": "pnpm --filter @nan/node-server start && echo 0",
+    "start:webApp": "pnpm --filter @www/http-server start && echo 0"
+  },
+  "engines": {
+    "node": "=16.15.1",
+    "pnpm": "=7.5.1"
+  }
 }
