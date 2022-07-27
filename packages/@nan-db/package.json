@@ -2,7 +2,7 @@
   "name": "@nan/db-entities",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@midwayjs/orm": "3",
+    "@midwayjs/orm": "^3.4.3",
     "typeorm": "^0.3.7"
   }
 }

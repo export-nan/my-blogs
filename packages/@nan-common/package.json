@@ -2,11 +2,15 @@
   "name": "@nan/common",
   "version": "1.0.0",
   "description": "公共方法库",
-  "main": "./src/main.ts",
+  "main": "./index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@midwayjs/swagger": "^3.4.5",
+    "@midwayjs/validate": "^3.3.11"
+  }
 }
