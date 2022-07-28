@@ -3,3 +3,11 @@
   padding: 0;
 }
 
+:root{
+  --font-color: #333;
+  --contaimer-shadow: 0 0 3px #e5e5e5;
+}
+
+
+@import './common.scss';
+@import './flex.scss';

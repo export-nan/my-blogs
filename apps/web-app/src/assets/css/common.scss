@@ -1,0 +1,36 @@
+:root{
+  --input-border: 2px #666 solid;
+  --error-color: #FF7F50;
+}
+// ui-component
+.ui-component {
+  // input
+  &.input-comtainer {
+    width: 100%;
+    height: 40px;
+    input{
+      padding-left: 20px;
+      padding-right: 20px;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      border-radius: 8px;
+      border: var(--input-border);
+      color: var(--font-color);
+      box-sizing: border-box;
+      background-color: #0000;
+      &.is-verify-error {
+        border-color: var(--error-color)
+      }
+    }
+  }
+  &.btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+
+
