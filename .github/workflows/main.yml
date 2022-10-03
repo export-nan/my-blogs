@@ -42,6 +42,6 @@ jobs:
           port: 22
           key: ${{ secrets.NAN_PEM }}
           source: "./apps/@www/webApp"
-          target: "/home/ubuntu/code/myWebServer/apps/@www/webApp;"
+          target: "/home/ubuntu/code/myWebServer/apps/@www/webApp"
           
    
