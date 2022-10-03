@@ -26,7 +26,7 @@ import EmailComponent from '@/components/input/Email.component.vue';
 import SubmitComponent from '@/components/button/Submit.component.vue';
 import { ref } from 'vue';
 import { reactiveFormItem } from '@/utils/reactive-expert';
-import PasswordComponent from '../../components/input/password.component.vue';
+import PasswordComponent from '../../components/input/Password.component.vue';
 
 type TEmailComponentCtx = InstanceType<typeof EmailComponent>;
 type TPasswordComponentCtx = InstanceType<typeof PasswordComponent>;
