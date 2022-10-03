@@ -31,7 +31,7 @@ jobs:
       - name: intall pnpm
         uses: pnpm/action-setup@v2.2.2
         with: 
-          version: ">=7.5.1"
+          version: "7.5.X"
       - name: install dep
         run: pnpm install
       - name: build webApp
