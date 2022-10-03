@@ -4,7 +4,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
 // props 编译器宏选项，无需引入
 const props = defineProps<{
   valSync: string;

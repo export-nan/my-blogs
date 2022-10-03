@@ -7,13 +7,13 @@
       :type="ShowPassword ? 'text' : 'password'"
       :name="name"
     />
-    <SymbolIocn class="passwordIocn" v-if="!ShowPassword" @click="changeShowPassWord" iocn-code="#icon-mimabukejian" />
-    <SymbolIocn class="passwordIocn" v-if="ShowPassword" @click="changeShowPassWord" iocn-code="#icon-mimakejian" />
+    <!-- <SymbolIocn class="passwordIocn" v-if="!ShowPassword" @click="changeShowPassWord" iocn-code="#icon-mimabukejian" />
+    <SymbolIocn class="passwordIocn" v-if="ShowPassword" @click="changeShowPassWord" iocn-code="#icon-mimakejian" /> -->
   </div>
 </template>
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import SymbolIocn from '@/iocn/Symbol.iocn.vue';
+// import SymbolIocn from '@/iocn/Symbol.iocn.vue';
 // props 编译器宏选项，无需引入
 const props = defineProps<{
   valSync: string;
