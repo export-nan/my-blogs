@@ -38,7 +38,7 @@ jobs:
       - name: appleboy/scp-action
         uses: appleboy/scp-action@v0.1.3
         with: 
-          host: "ubuntu@ec2-16-163-109-255.ap-east-1.compute.amazonaws.com"
+          host: "16.163.109.255"
           port: 22
           key: ${{ secrets.NAN_PEM }}
           source: "apps/@www/webApp"
