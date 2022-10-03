@@ -41,7 +41,7 @@ jobs:
           host: "ubuntu@ec2-16-163-109-255.ap-east-1.compute.amazonaws.com"
           port: 22
           key: ${{ secrets.NAN_PEM }}
-          source: "./apps/@www/webApp"
+          source: "apps/@www/webApp"
           target: "/home/ubuntu/code/myWebServer/apps/@www/webApp"
           
    
