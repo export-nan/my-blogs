@@ -35,8 +35,8 @@ jobs:
         run: pnpm install
       - name: build webApp
         run: pnpm build:webApp
-      - name: deploy
-        uses: appleboy/scp-action@v0.0.1
+      - name: appleboy/scp-action
+        uses: appleboy/scp-action@v0.1.3
         with: 
           host: "ubuntu@ec2-16-163-109-255.ap-east-1.compute.amazonaws.com"
           port: 22
