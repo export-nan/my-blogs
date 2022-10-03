@@ -40,8 +40,11 @@ jobs:
         with: 
           host: "16.163.109.255"
           port: 22
+          username: "ubuntu"
           key: ${{ secrets.NAN_PEM }}
           source: "apps/@www/webApp"
           target: "/home/ubuntu/code/myWebServer/apps/@www/webApp"
+          script: whoami
+
           
    
