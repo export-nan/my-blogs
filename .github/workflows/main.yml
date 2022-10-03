@@ -39,9 +39,9 @@ jobs:
         uses: appleboy/scp-action@v0.0.1
         with: 
           host: ${{ secrets.NAN_HOST }}
+          port: 22
           key: ${{ secrets.NAN_PEM }}
           source: "./apps/@www/webApp"
-          port: 22
           target: ${{secrets.NAN_TARGET }}
           
    
