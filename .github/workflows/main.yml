@@ -27,11 +27,10 @@ jobs:
         uses: actions/setup-node@v3.5.0
         with:
           node-version: "16.X"
-      - uses: pnpm/action-setup@v2.2.2
       - name: intall pnpm
         uses: pnpm/action-setup@v2.2.2
         with: 
-          version: "7.5.X"
+          version: "7.5.1"
       - name: install dep
         run: pnpm install
       - name: build webApp
