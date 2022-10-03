@@ -11,7 +11,7 @@ const routes = [
       {
         path: '/sign/email-login',
         name: 'email_login',
-        component: () => import('@/view/login/email.view.vue'),
+        component: () => import('@/view/login/email.vue'),
       },
     ],
   },
