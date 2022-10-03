@@ -38,10 +38,10 @@ jobs:
       - name: deploy
         uses: appleboy/scp-action@v0.0.1
         with: 
-          host: ${{ secrets.NAN_HOST }}
+          host: "ubuntu@ec2-16-163-109-255.ap-east-1.compute.amazonaws.com"
           port: 22
           key: ${{ secrets.NAN_PEM }}
           source: "./apps/@www/webApp"
-          target: ${{secrets.NAN_TARGET }}
+          target: "/home/ubuntu/code/myWebServer/apps/@www/webApp;"
           
    
