@@ -43,7 +43,9 @@ jobs:
           username: "ubuntu"
           key: ${{ secrets.NAN_PEM }}
           source: "apps/@www/webApp"
-          target: "/home/ubuntu/code/myWebServer/"
+          target: "/home/ubuntu/code/myBlogs"
+          rm: true
+          strip_components: 2
 
           
    
