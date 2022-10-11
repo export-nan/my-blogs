@@ -9,6 +9,8 @@ import { join } from 'path';
 // import { DefaultErrorFilter } from './filter/default.filter';
 // import { NotFoundFilter } from './filter/notfound.filter';
 import { ReportMiddleware } from './middleware/report.middleware';
+import * as upload from '@midwayjs/upload';
+
 
 @Configuration({
   imports: [
@@ -17,6 +19,7 @@ import { ReportMiddleware } from './middleware/report.middleware';
     orm,
     jwt,
     swagger,
+    upload,
     {
       component: info,
       enabledEnvironment: ['local'],

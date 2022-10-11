@@ -8,6 +8,11 @@
   --contaimer-shadow: 0 0 3px #e5e5e5;
 }
 
+.pc-container{
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
 
 @import './common.scss';
 @import './flex.scss';

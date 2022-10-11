@@ -7,5 +7,6 @@
 import { BaseEntity } from './base_entity';
 
 import { UserEntity } from './user.entity';
+import { FileStoreEntity } from './file-store.entity'
 
-export { BaseEntity, UserEntity };
+export { BaseEntity, UserEntity, FileStoreEntity};
