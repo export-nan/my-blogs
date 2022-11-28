@@ -8,5 +8,7 @@ import { BaseEntity } from './base_entity';
 
 import { UserEntity } from './user.entity';
 import { FileStoreEntity } from './file-store.entity'
+import { PostEntity } from './post.entity';
+import { PostContentEntity }  from './post-content.entity';
 
-export { BaseEntity, UserEntity, FileStoreEntity};
+export { BaseEntity, UserEntity, FileStoreEntity, PostEntity, PostContentEntity};

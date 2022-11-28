@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 
 import singLayout from '@/layout/sign.vue';
-import homeLayout from '@/layout/home.layout.vue';
+import homeLayout from '@/layout/home-layout.vue';
 
 const routes:RouteRecordRaw[] = [
   {
@@ -24,7 +24,7 @@ const routes:RouteRecordRaw[] = [
       {
         path: '/home',
         name: 'home',
-        component: () => import('@/view/login/home/index.vue'),
+        component: () => import('@/view/home/index.vue'),
       }
     ]
   }

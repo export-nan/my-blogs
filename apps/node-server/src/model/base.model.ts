@@ -5,8 +5,8 @@
  */
 
 import { Provide } from '@midwayjs/decorator';
-import { DeleteResult } from 'typeorm';
-import { Repository, DeepPartial } from 'typeorm';
+import { DeleteResult, FindManyOptions } from 'typeorm';
+import { Repository, DeepPartial, FindOneOptions } from 'typeorm';
 
 @Provide()
 export abstract class BaseModel<EN> {
@@ -25,6 +25,11 @@ export abstract class BaseModel<EN> {
     const ret = await this.repo.save(body);
     return ret;
   }
+  // 创建多个
+  public async createMany(entityBodyList: DeepPartial<EN>[]) {
+    const res = await this.repo.save(entityBodyList);
+    return res;
+  }
   // 删除一个
   public async deleteOne(entityId: number | string): Promise<DeleteResult> {
     const ret = await this.repo.delete(entityId);
@@ -41,8 +46,14 @@ export abstract class BaseModel<EN> {
     return ret;
   }
   // 读取一个
-  public async readOne(body) {
+  public async readOne(body: FindOneOptions<EN>) {
     const ret = await this.repo.findOne(body);
     return ret;
   }
+  // 读取多个
+  public async readMany(body: FindManyOptions<EN>) {
+    const ret = await this.repo.find(body)
+    return ret;
+  }
+
 }

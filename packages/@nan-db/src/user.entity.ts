@@ -3,11 +3,10 @@
  *
  *
  */
-import { Column, Index, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, PrimaryGeneratedColumn } from 'typeorm';
 import { EntityModel } from '@midwayjs/orm';
 import { BaseEntity } from './base_entity';
 
-@Index('email_index', ['email'], {})
 @EntityModel('tc_user', { schema: 'nan-db' })
 export class UserEntity extends BaseEntity {
   @PrimaryGeneratedColumn({
@@ -22,4 +21,10 @@ export class UserEntity extends BaseEntity {
     length: 64,
   })
   email: string;
+  @Column('varchar',{
+    name: 'role',
+    comment: '用户角色',
+    length: 32,
+  })
+  role: string;
 }

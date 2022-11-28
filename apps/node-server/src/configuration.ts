@@ -10,7 +10,7 @@ import { join } from 'path';
 // import { NotFoundFilter } from './filter/notfound.filter';
 import { ReportMiddleware } from './middleware/report.middleware';
 import * as upload from '@midwayjs/upload';
-
+import * as redis from '@midwayjs/redis';
 
 @Configuration({
   imports: [
@@ -20,6 +20,7 @@ import * as upload from '@midwayjs/upload';
     jwt,
     swagger,
     upload,
+    redis,
     {
       component: info,
       enabledEnvironment: ['local'],

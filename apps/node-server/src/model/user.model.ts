@@ -18,4 +18,5 @@ export class UserModel extends BaseModel<UserEntity> {
     const ret = super.readOne(where);
     return ret;
   }
+
 }

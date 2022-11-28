@@ -1,18 +1,20 @@
-import {Column, PrimaryGeneratedColumn} from 'typeorm';
+import {Column, Entity, PrimaryGeneratedColumn} from 'typeorm';
 import {BaseEntity} from './base_entity';
 
+@Entity('tc_file_store', { schema: 'nan-db' })
 export class FileStoreEntity extends BaseEntity{
   @PrimaryGeneratedColumn({
     type: 'bigint',
-    name: 'file_store',
+    name: 'file-store-id',
     comment: '文件储存表自增ID',
   })
-  fileStore: number;
+  fileStoreId: number;
   @Column('bigint', {
     name: 'user-id',
     comment: '用户ID',
+    nullable: true,
   })
-  userId: string;
+  userId?: string;
   @Column('varchar', {
     name: 'file-name',
     comment: '文件名'
@@ -27,7 +29,7 @@ export class FileStoreEntity extends BaseEntity{
   @Column('varchar', {
     name: 'hash-code',
     comment: '文件唯一hash值',
-    length: 32
+    length: 64
   })
   hashCode: string;
   @Column('varchar', {
