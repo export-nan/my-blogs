@@ -98,65 +98,6 @@ export const APP_ERROR_TYPES: {[key: string]: T_AppErrorType} = {
   NO_ACCESS_PERMISSION: [1500, '没有访问权限'],
   NO_ROUTE_ACCESS_PERMISSION: [1600, '没有路由访问权限'],
 
-  // 登录注册
-  PHONE_NUMBER_FORMAT_INCORRECT: [1700, '手机号格式错误'],
-  VERIFY_CODE_LENGTH_INCORRECT: [1800, '验证码格式错误'],
-  VERIFY_CODE_NO_PHONE_NUMBER: [1900, '请提供正确的手机号'],
-  VERIFY_CODE_ALREADY_SEND: [2000, '验证码已经发送，请勿重复发'],
-  VERIFY_CODE_NOT_EXIST: [2100, '请先发送验证码'],
-  VERIFY_CODE_ERROR: [2200, '验证码错误'],
-  SEND_SMS_ERROR: [2300, '发送短信验证码失败'],
-
-  // 用户
-  USER_NOT_ASSIGNED_COMPANY: [2400, '该用户未关联到公司'],
-  USER_NOT_FOUND: [2500, '用户未找到'],
-  USER_OPERATOR_ERROR: [2501, '当前用户与运营人员不匹配'],
-  USER_PHONE_NUMBER_NOT_FOUND: [2502, '用户手机号未找到'],
-  ROLE_TYPE_ERROR: [2600, '角色类型错误'],
-
-  // 人才
-  TALENT_NOT_EXISTED: [2700, '人才不存在'],
-  ERROR_APPOINTMENT_TALENT: [2800, '请选择预约人才'],
-  TALENT_CAREER_NOT_EXISTED: [2900, '人才职业生涯不存在'],
-  ERROR_TALENT_CAREER_ID: [3000, '输入人才职业生涯ID错误'],
-
-  // 公司岗位
-  PLEASE_ENTER_CORRECT_PARAM: [3100, '请输入正确信息'],
-  COMPANY_POSITION_NOT_EXISTED: [3200, '公司岗位不存在'],
-  OP_TYPE_NOT_SUPPORTED: [3300, '操作类型不支持'],
-
-  // 预约
-  APPOINTMENT_NOT_EXIST: [3400, '暂无预约信息'],
-  APPOINTMENT_CONFLICT: [3401, '人才在该时间已预约'],
-
-  // 公司
-  COMPANY_NOT_EXIST: [3500, '该公司不存在'],
-  COMPANY_PARAM_NOT_SINGLE: [3501, '修改企业字段只支持一个'],
-
-  // 岗位画像
-  OPEN_POSITION_PORTRAIT_NOT_EXIST: [3600, '暂无开放岗位画像'],
-  POSITION_PORTRAIT_NOT_EXIST: [3700, '该人才画像不存在'],
-  INCORRECT_INFORMATION: [3800, '信息填写错误'],
-
-  // 公司
-  COMPANY_ID_NOT_EXIST: [3900, '请关联companyId'],
-
-  // 平台开放职位
-  CAREER_PARAM_NOT_SINGLE: [4000, '修改职位字段只支持一个'],
-
-  // 运营临时岗位
-  OPERATOR_NOT_EXIST: [4100, '运营临时岗位不存在'],
-
-  // 运营临时岗位
-  TEMP_POSITION_NOT_EXIST: [4200, '运营临时岗位不存在'],
-
-  // 画像标签
-  PORTRAIT_TAG_NOT_EXIST: [4300, '画像标签不存在'],
-
-  // 关联关系校验
-  NO_RELATION_BETWEEN_OPERATOR_AND_TEMP_POSITION: [4400, '当前运营用户与临时岗位没有关联关系'],
-  NO_RELATION_BETWEEN_OPERATOR_TEMP_POSITION_AND_PORTRAIT: [4400, '当前运营临时岗位与画像没有关联关系'],
-  NO_RELATION_BETWEEN_OPERATOR_TEMP_POSITION_PORTRAIT_AND_TAG: [4400, '当前运营临时岗位画像与标签没有关联关系'],
 };
 
 /**

@@ -1,0 +1,128 @@
+{
+  "id": "1366638",
+  "name": "icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2272995",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "7484851",
+      "name": "密码不可见",
+      "font_class": "mimabukejian",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "7484860",
+      "name": "密码可见",
+      "font_class": "mimakejian",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "593132",
+      "name": "冰原神鹿",
+      "font_class": "bingyuanshenlu",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "22561869",
+      "name": "flower",
+      "font_class": "flower",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "22561870",
+      "name": "plume",
+      "font_class": "plume",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "22561872",
+      "name": "sands",
+      "font_class": "sands",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "22561876",
+      "name": "circle",
+      "font_class": "circle",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "23259280",
+      "name": "goblet",
+      "font_class": "goblet",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "23259592",
+      "name": "anemo",
+      "font_class": "anemo",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "23259593",
+      "name": "cryo",
+      "font_class": "cryo",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "23259595",
+      "name": "dendro",
+      "font_class": "dendro",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "23259596",
+      "name": "electro",
+      "font_class": "electro",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "23259597",
+      "name": "geo",
+      "font_class": "geo",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "23259598",
+      "name": "hydro",
+      "font_class": "hydro",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "23259599",
+      "name": "pyro",
+      "font_class": "pyro",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "23259908",
+      "name": "amber",
+      "font_class": "amber",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    }
+  ]
+}

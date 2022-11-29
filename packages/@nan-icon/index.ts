@@ -1,2 +1,2 @@
-import './src/icon/iconfont';
-import './src/index.css';
+import './icon/iconfont.js';
+import './icon/iconfont.css';

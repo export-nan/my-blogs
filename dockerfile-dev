@@ -1,0 +1,21 @@
+FROM node:16
+
+# 安装 pnpm
+RUN curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
+
+
+#RUN pnpm fetch --prod
+
+# ADD . ./
+# RUN pnpm install -r --offline --prod
+
+# # 安装项目依赖包]
+# RUN npmp install
+
+# 构建 webApp
+# RUN npmp --filter @nan/web-app build:prod
+
+COPY ./ /var/code
+WORKDIR /var/code
+
+CMD [ "node" ]

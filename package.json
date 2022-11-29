@@ -13,11 +13,21 @@
     "dev:server": "pnpm --filter @nan/node-server dev && echo 0",
     "dev:webApp": "pnpm --filter @nan/web-app dev && echo 0",
     "build:webApp": "pnpm --filter @nan/web-app build && echo 0",
-    "start:server": "pnpm --filter @nan/node-server start && echo 0",
-    "start:webApp": "pnpm --filter @www/http-server start && echo 0"
+    "build:server": "pnpm --filter @nan/node-server build && echo 0",
+    "start:server": "pnpm --filter @nan/node-server start && echo 0"
   },
   "engines": {
     "node": ">=16.0.1",
     "pnpm": ">=7.5.1"
+  },
+  "dependencies": {
+    "@nan/utils": "workspace:^1.0.0",
+    "axios": "^1.1.2",
+    "dayjs": "^1.11.5",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.3.2",
+    "@types/node": "14"
   }
 }
